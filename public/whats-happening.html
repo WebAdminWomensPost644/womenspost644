@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Happening - Women's Post 644</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-container">
+        <img src="TAL-emblem-line-art-RGB.png" alt="American Legion Emblem" class="logo-img">
+        <div class="logo-text">
+          <span class="legion-title">AMERICAN LEGION</span>
+          <span class="chapter-title">GREATER CINCINNATI</span>
+          <span class="post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="visit-us.html">Visit Us</a></li>
+          <li><a href="whats-happening.html" class="active">What's Happening</a></li>
+          <li><a href="our-moments.html">Our Moments</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="lets-connect.html">Let's Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- WHAT'S HAPPENING PAGE CONTENT -->
+  <!-- ========================================== -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-split">
+      <div class="hero-content">
+        <h1>What's Happening</h1>
+        <div class="hero-divider">&#9733;</div>
+        <p class="hero-subtitle">Stay connected. Get involved.<br>Make a difference.</p>
+        <p style="margin-top: 15px; font-size: 0.95rem;">There's always something happening at Women's Post 644—from monthly meetings to community service and special events. Check back often and join us!</p>
+      </div>
+      <div class="hero-image">
+        <img src="whats_happening_hero.png" alt="Notebook and coffee cup with service items">
+      </div>
+    </section>
+
+    <!-- Calendar & Upcoming Events Section -->
+    <section class="main-container">
+      <!-- Left Column: Interactive Calendar Widget -->
+      <div class="calendar-card">
+        <div class="calendar-header-title">MONTH AT A GLANCE</div>
+        <div class="calendar-nav">
+          <span class="cal-arrow" id="prev-month">&#10094;</span>
+          <h3 id="calendar-month-year">AUGUST 2026</h3>
+          <span class="cal-arrow" id="next-month">&#10095;</span>
+        </div>
+
+        <div class="calendar-grid">
+          <!-- Days of the Week Header -->
+          <div class="cal-weekday">SUN</div>
+          <div class="cal-weekday">MON</div>
+          <div class="cal-weekday">TUE</div>
+          <div class="cal-weekday">WED</div>
+          <div class="cal-weekday">THU</div>
+          <div class="cal-weekday">FRI</div>
+          <div class="cal-weekday">SAT</div>
+        </div>
+
+        <!-- Dynamic Days Grid Injected via JavaScript -->
+        <div class="calendar-grid" id="calendar-days-container" style="border-top: none;">
+        </div>
+      </div>
+
+      <!-- Right Column: Upcoming Events List -->
+      <div class="upcoming-card">
+        <div class="upcoming-header-title">UPCOMING EVENTS</div>
+        <div class="card-divider">&#9733;</div>
+
+        <div class="event-item">
+          <div class="event-date-box">
+            <span class="ev-month">AUG</span>
+            <span class="ev-day">23</span>
+          </div>
+          <div class="event-details">
+            <h4>Community Service Project</h4>
+            <p class="ev-time">10:00 AM</p>
+            <p class="ev-desc">Details coming soon!</p>
+          </div>
+          <div class="event-icon">&#9825;</div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-box">
+            <span class="ev-month">AUG</span>
+            <span class="ev-day">28</span>
+          </div>
+          <div class="event-details">
+            <h4>Post 644 Monthly Meeting</h4>
+            <p class="ev-time">10:00 AM</p>
+            <p class="ev-desc">Groesbeck Library</p>
+          </div>
+          <div class="event-icon">&#128101;</div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-box">
+            <span class="ev-month">SEP</span>
+            <span class="ev-day">20</span>
+          </div>
+          <div class="event-details">
+            <h4>Veterans Support Initiative</h4>
+            <p class="ev-time">10:00 AM</p>
+            <p class="ev-desc">Helping those who served</p>
+          </div>
+          <div class="event-icon">&#128151;</div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-box">
+            <span class="ev-month">SEP</span>
+            <span class="ev-day">27</span>
+          </div>
+          <div class="event-details">
+            <h4>Post 644 Monthly Meeting</h4>
+            <p class="ev-time">10:00 AM</p>
+            <p class="ev-desc">Groesbeck Library</p>
+          </div>
+          <div class="event-icon">&#128101;</div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-box">
+            <span class="ev-month">OCT</span>
+            <span class="ev-day">25</span>
+          </div>
+          <div class="event-details">
+            <h4>Community Outreach Event</h4>
+            <p class="ev-time">10:00 AM</p>
+            <p class="ev-desc">More info to come!</p>
+          </div>
+          <div class="event-icon">&#128106;</div>
+        </div>
+
+        <div class="view-all-container">
+          <a href="#" class="view-all-btn">VIEW ALL EVENTS</a>
+        </div>
+      </div>
+    </section>
+
+	<!-- Announcements / Monthly Highlights Section -->
+    <section class="announcements-section">
+      <div class="announcements-header-title">ANNOUNCEMENTS / MONTHLY HIGHLIGHTS</div>
+      <div class="announcements-grid">
+        
+        <!-- Left Announcement Box -->
+        <div class="announcement-badge-row">
+          <div class="icon-circle red-bg">&#128227;</div>
+          <div class="announcement-list">
+            <p><strong>&#9733; Membership Drive in Full Swing!</strong><br>Invite a sister veteran to our next meeting.</p>
+            <p><strong>&#9733; Cincinnati Veteran's Appreciation – Aug 15</strong><br>Join us as we honor and celebrate our veterans.</p>
+            <p><strong>&#9733; Volunteer Opportunities</strong><br>Many ways to serve. Many lives to impact.</p>
+          </div>
+        </div>
+
+        <!-- Right Announcement Box -->
+        <div class="announcement-badge-row">
+          <div class="icon-circle gold-bg">&#128198;</div>
+          <div class="announcement-list">
+            <p>From meetings to service projects and special events, there's always a way to get involved and make a difference.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Quote Banner -->
+    <div class="cta-banner">
+      <p>We honor the women who came before us by ensuring every woman veteran today can find a place of understanding, friendship, and service.</p>
+      <p class="quote-footer-text">&#9733; THEIR VISION BECAME OUR LEGACY. THEIR PROMISE REMAINS OUR COMMITMENT. &#9733;</p>
+    </div>
+  </main>
+  <!-- ========================================== -->
+
+  <!-- FIXED FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="TAL-emblem-full-detail-RGB.png" alt="American Legion Emblem" class="footer-img">
+        <div class="footer-logo-text">
+          <span class="footer-legion-title">AMERICAN LEGION</span>
+          <span class="footer-chapter-title">GREATER CINCINNATI</span>
+          <span class="footer-post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <div class="footer-address">
+        <p>&#128205; Allen Temple AME Church<br>8501 Hillcrest Rd.<br>Cincinnati, OH 45255</p>
+      </div>
+      <div class="footer-contact">
+        <p>&#9993; info@womenspost644.org</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Calendar Script -->
+  <script>
+    let currentYear = 2026;
+    let currentMonth = 7; // August (0-indexed: Jan = 0, Aug = 7)
+
+    const monthsArray = [
+      "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+      "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+    ];
+
+    // Mock sample events mapped by "YYYY-M-D"
+    const sampleEvents = {
+      "2026-7-23": { title: "Service Project", time: "10:00 AM" },
+      "2026-7-28": { title: "Post Meeting", time: "10:00 AM" },
+      "2026-8-20": { title: "Support Init.", time: "10:00 AM" },
+      "2026-8-27": { title: "Post Meeting", time: "10:00 AM" }
+    };
+
+    function renderCalendar(year, month) {
+      const monthYearLabel = document.getElementById("calendar-month-year");
+      const daysContainer = document.getElementById("calendar-days-container");
+      
+      monthYearLabel.textContent = `${monthsArray[month]} ${year}`;
+      daysContainer.innerHTML = "";
+
+      // Get first day of the month and total days in the month
+      const firstDayIndex = new Date(year, month, 1).getDay();
+      const totalDays = new Date(year, month + 1, 0).getDate();
+      const prevTotalDays = new Date(year, month, 0).getDate();
+
+      // Render trailing days from previous month
+      for (let i = firstDayIndex; i > 0; i--) {
+        const dayDiv = document.createElement("div");
+        dayDiv.className = "cal-day muted";
+        dayDiv.innerHTML = `<span>${prevTotalDays - i + 1}</span>`;
+        daysContainer.appendChild(dayDiv);
+      }
+
+      // Render days of the current month
+      for (let day = 1; day <= totalDays; day++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.className = "cal-day";
+        
+        const dateKey = `${year}-${month}-${day}`;
+        if (sampleEvents[dateKey]) {
+          dayDiv.classList.add("active-event");
+          dayDiv.innerHTML = `
+            <span class="day-num">${day}</span>
+            <span class="cal-event-tag">${sampleEvents[dateKey].title}</span>
+            <span class="cal-time">${sampleEvents[dateKey].time}</span>
+          `;
+        } else {
+          dayDiv.innerHTML = `<span>${day}</span>`;
+        }
+        daysContainer.appendChild(dayDiv);
+      }
+
+      // Fill remaining grid blocks for trailing look into next month
+      const totalCellsPrinted = firstDayIndex + totalDays;
+      const nextMonthDaysNeeded = totalCellsPrinted % 7 === 0 ? 0 : 7 - (totalCellsPrinted % 7);
+      for (let j = 1; j <= nextMonthDaysNeeded; j++) {
+        const dayDiv = document.createElement("div");
+        dayDiv.className = "cal-day muted";
+        dayDiv.innerHTML = `<span>${j}</span>`;
+        daysContainer.appendChild(dayDiv);
+      }
+    }
+
+    document.getElementById("prev-month").addEventListener("click", () => {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      renderCalendar(currentYear, currentMonth);
+    });
+
+    document.getElementById("next-month").addEventListener("click", () => {
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      renderCalendar(currentYear, currentMonth);
+    });
+
+    // Initialize on page load
+    renderCalendar(currentYear, currentMonth);
+  </script>
+
+</body>
+</html>

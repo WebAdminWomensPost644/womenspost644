@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Moments - Women's Post 644</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-container">
+        <img src="TAL-emblem-line-art-RGB.png" alt="American Legion Emblem" class="logo-img">
+        <div class="logo-text">
+          <span class="legion-title">AMERICAN LEGION</span>
+          <span class="chapter-title">GREATER CINCINNATI</span>
+          <span class="post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="visit-us.html">Visit Us</a></li>
+          <li><a href="whats-happening.html">What's Happening</a></li>
+          <li><a href="our-moments.html" class="active">Our Moments</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="lets-connect.html">Let's Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- OUR MOMENTS PAGE CONTENT -->
+  <!-- ========================================== -->
+  <main>
+    <!-- Hero Section (50/50 Split layout matching other pages) -->
+    <section class="hero-split">
+      <div class="hero-content">
+        <h1>OUR MOMENTS</h1>
+        <div class="hero-divider">&#9733;</div>
+        <p class="hero-subtitle">Capturing the heart of sisterhood, service, and community.</p>
+        <p style="margin-top: 15px; font-size: 0.95rem;">Every meeting, every project, every act of service—and every shared laugh—strengthens the bond we share as women veterans.</p>
+        <p style="margin-top: 15px; font-style: italic; font-family: var(--font-serif); color: var(--color-red); font-weight: bold;">These are the moments that matter.</p>
+      </div>
+      <div class="hero-image">
+        <img src="content/photos/moments-hero.png" alt="Flowers and folded American flag" onerror="handleImageError(this)">
+      </div>
+    </section>
+
+    <!-- Gallery Section Intro -->
+    <section class="moments-intro-section">
+      <div class="guides-header" style="max-width: 1100px; margin: 40px auto 20px; padding: 0 40px;">
+        <span class="line"></span>
+        <h2>MOMENTS THAT MATTER</h2>
+        <span class="line"></span>
+      </div>
+      <p style="text-align: center; font-size: 0.95rem; color: var(--color-text); margin-bottom: 40px;">
+        A glimpse into the friendships we build, the service we give, and the community we strengthen together. Click any photo to expand.
+      </p>
+    </section>
+
+    <!-- 3-Column Photo Card Grid Section -->
+    <section class="moments-grid-section">
+      <div class="moments-grid">
+        
+        <!-- Card 1 -->
+        <div class="moment-card" onclick="openGallery('content/photos/sisterhood.png', 'Sisterhood: Building friendships that last a lifetime.')">
+          <div class="moment-img-container">
+            <img src="content/photos/sisterhood.png" alt="Women sitting together around a table" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#9733; SISTERHOOD</div>
+            <p>Building friendships that last a lifetime.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="moment-card" onclick="openGallery('content/photos/serving_community.png', 'Serving Our Community: Making a difference through service projects and donations.')">
+          <div class="moment-img-container">
+            <img src="content/photos/serving_community.png" alt="Members posing with community donation boxes" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#128151; SERVING OUR COMMUNITY</div>
+            <p>Making a difference through service projects and donations.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="moment-card" onclick="openGallery('content/photos/honoring_veterans.png', 'Honoring Our Veterans: Proudly honoring those who served before us.')">
+          <div class="moment-img-container">
+            <img src="content/photos/honoring_veterans.png" alt="Members marching with banner in parade" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#128101; HONORING OUR VETERANS</div>
+            <p>Proudly honoring those who served before us.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="moment-card" onclick="openGallery('content/photos/giving_back.png', 'Giving Back: Supporting families and organizations in our local community.')">
+          <div class="moment-img-container">
+            <img src="content/photos/giving_back.png" alt="Members wrapping gifts" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#128151; GIVING BACK</div>
+            <p>Supporting families and organizations in our local community.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="moment-card" onclick="openGallery('content/photos/together_we_grow.png', 'Together We Grow: Learning, leading, and supporting one another every day.')">
+          <div class="moment-img-container">
+            <img src="content/photos/together_we_grow.png" alt="Group photo of post members" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#128737; TOGETHER WE GROW</div>
+            <p>Learning, leading, and supporting one another every day.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="moment-card" onclick="openGallery('content/photos/leading_with_purpose.png', 'Leading With Purpose: Stepping up to lead, inspire, and make an impact.')">
+          <div class="moment-img-container">
+            <img src="content/photos/leading_with_purpose.png" alt="Members participating in a meeting discussion" onerror="handleImageError(this)">
+          </div>
+          <div class="moment-card-content">
+            <div class="moment-card-title">&#9733; LEADING WITH PURPOSE</div>
+            <p>Stepping up to lead, inspire, and make an impact.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Quote Banner -->
+    <div class="cta-banner" style="margin-top: 60px;">
+      <p style="font-size: 1.1rem;">Every moment. Every connection. Every purpose.</p>
+      <p style="font-style: italic; font-size: 0.95rem; margin-top: 5px;">Together, we create memories that build a legacy.</p>
+      <p class="quote-footer-text" style="margin-top: 15px;">&#9733; THEIR VISION BECAME OUR LEGACY. THEIR PROMISE REMAINS OUR COMMITMENT. &#9733;</p>
+    </div>
+  </main>
+  <!-- ========================================== -->
+
+  <!-- LIGHTBOX GALLERY MODAL -->
+  <div id="galleryModal" class="lightbox-modal" onclick="closeGallery()">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Expanded Gallery View">
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FIXED FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="TAL-emblem-full-detail-RGB.png" alt="American Legion Emblem" class="footer-img">
+        <div class="footer-logo-text">
+          <span class="footer-legion-title">AMERICAN LEGION</span>
+          <span class="footer-chapter-title">GREATER CINCINNATI</span>
+          <span class="footer-post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <div class="footer-address">
+        <p>&#128205; Allen Temple AME Church<br>8501 Hillcrest Rd.<br>Cincinnati, OH 45255</p>
+      </div>
+      <div class="footer-contact">
+        <p>&#9993; info@womenspost644.org</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gallery and Placeholder Script -->
+  <script>
+    function handleImageError(imgElement) {
+      // Replaces missing image with a clean styled message card container
+      const container = imgElement.parentElement;
+      container.innerHTML = `
+        <div class="photo-waiting-message">
+          <span>&#128247;</span>
+          <p>Photo coming soon...</p>
+        </div>
+      `;
+    }
+
+    function openGallery(imageSrc, captionText) {
+      const modal = document.getElementById("galleryModal");
+      const modalImg = document.getElementById("lightboxImg");
+      const caption = document.getElementById("lightboxCaption");
+      
+      modal.style.display = "flex";
+      modalImg.src = imageSrc;
+      caption.textContent = captionText;
+
+      // Handle if modal opens on a broken image path
+      modalImg.onerror = function() {
+        modalImg.style.display = "none";
+        caption.textContent = "Photo coming soon... Check back later!";
+      };
+      modalImg.onload = function() {
+        modalImg.style.display = "block";
+      };
+    }
+
+    function closeGallery() {
+      document.getElementById("galleryModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

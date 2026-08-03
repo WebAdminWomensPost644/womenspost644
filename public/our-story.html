@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story - Women's Post 644</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-container">
+        <img src="TAL-emblem-line-art-RGB.png" alt="American Legion Emblem" class="logo-img">
+        <div class="logo-text">
+          <span class="legion-title">AMERICAN LEGION</span>
+          <span class="chapter-title">GREATER CINCINNATI</span>
+          <span class="post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="our-story.html" class="active">Our Story</a></li>
+          <li><a href="visit-us.html">Visit Us</a></li>
+          <li><a href="whats-happening.html">What's Happening</a></li>
+          <li><a href="our-moments.html">Our Moments</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="lets-connect.html">Let's Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- OUR STORY PAGE CONTENT -->
+  <!-- ========================================== -->
+  <main>
+    <!-- Story Hero Section (Converted to 50/50 Split layout) -->
+    <section class="hero-split">
+      <div class="hero-content">
+        <h1>Our Story</h1>
+        <div class="hero-divider">&#9733;</div>
+        <p class="hero-subtitle">Their vision became our legacy.<br>Their promise remains our commitment.</p>
+      </div>
+      <div class="hero-image">
+        <img src="our_story.png" alt="Our Story: Their vision became our legacy." onerror="handleImageError(this)">
+      </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section class="legacy-section">
+      <div class="content-left">
+        <h2>A Legacy Born in 1946</h2>
+        <p>In 1946, a group of determined women in Cincinnati came together with a shared belief: that women who served our country deserved a place to belong, lead, and continue making a difference[cite: 2].</p>
+        <p>They founded Auxiliary Unit 1946 of The American Legion—a sisterhood built on service, patriotism, and strong values[cite: 2].</p>
+        <p>Today, we carry that legacy forward as American Legion Greater Cincinnati Women's Post 644[cite: 2].</p>
+        <p>We honor their courage by living their mission—supporting veterans, strengthening our community, and <span class="highlight-red">empowering women to lead[cite: 2].</span></p>
+      </div>
+      <div class="legacy-image">
+        <img src="smiling.png" alt="Members of Women's Post 644 smiling together" onerror="handleImageError(this)">
+      </div>
+    </section>
+
+    <!-- What Guides Us Section -->
+    <section class="guides-section">
+      <div class="guides-header">
+        <span class="line"></span>
+        <h2>What Guides Us</h2>
+        <span class="line"></span>
+      </div>
+      
+      <div class="guides-grid">
+        <div class="guide-item">
+          <div class="guide-icon">&#9825;</div>
+          <h4>Service</h4>
+          <p>We serve veterans, our community, and one another[cite: 2].</p>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">&#9734;</div>
+          <h4>Sisterhood</h4>
+          <p>We uplift, encourage, and stand together through every season[cite: 2].</p>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">&#127806;</div>
+          <h4>Legacy</h4>
+          <p>We honor those who came before us by preparing leaders for tomorrow[cite: 2].</p>
+        </div>
+        <div class="guide-item">
+          <div class="guide-icon">&#9873;</div>
+          <h4>Commitment</h4>
+          <p>We show up, step up, and make a difference—today and always[cite: 2].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Promise Section -->
+    <section class="promise-section">
+      <div class="promise-image">
+        <img src="boxes.png" alt="Women volunteering and packing boxes" onerror="handleImageError(this)">
+      </div>
+      <div class="promise-content">
+        <h3>It's more than history[cite: 2].</h3>
+        <p>It's who we are[cite: 2].</p>
+        <p>It's what we do[cite: 2].</p>
+        <p>It's why we exist[cite: 2].</p>
+        <p class="promise-bold">It's our promise to keep[cite: 2].</p>
+      </div>
+    </section>
+
+    <div class="cta-banner">
+      <p>You're among friends. <span class="heart-icon">&#9825;</span></p>
+      <p class="quote-footer-text">&#9733; SERVICE &#9733; SISTERHOOD &#9733; COMMUNITY &#9733;</p>
+    </div>
+  </main>
+  <!-- ========================================== -->
+
+  <!-- FIXED FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="TAL-emblem-full-detail-RGB.png" alt="American Legion Emblem" class="footer-img">
+        <div class="footer-logo-text">
+          <span class="footer-legion-title">AMERICAN LEGION</span>
+          <span class="footer-chapter-title">GREATER CINCINNATI</span>
+          <span class="footer-post-title">WOMEN'S POST 644</span>
+        </div>
+      </div>
+      <div class="footer-address">
+        <p>&#128205; Allen Temple AME Church<br>8501 Hillcrest Rd.<br>Cincinnati, OH 45255</p>
+      </div>
+      <div class="footer-contact">
+        <p>&#9993; info@womenspost644.org</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleImageError(imgElement) {
+      const container = imgElement.parentElement;
+      container.innerHTML = `
+        <div class="photo-waiting-message">
+          <span>&#128247;</span>
+          <p>Photo coming soon...</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
