@@ -30,7 +30,6 @@ body {
 /* ========================================= */
 .home-photo {
   width: 100%;
-  max-height: 505px;
   overflow: hidden;
   background: #e9e0d2;
 }
@@ -38,9 +37,7 @@ body {
 .home-photo img {
   display: block;
   width: 100%;
-  height: clamp(300px, 39vw, 505px);
-  object-fit: cover;
-  object-position: center 35%;
+  height: auto;
 }
 
 .home-intro,
@@ -221,9 +218,6 @@ body {
     margin-inline: auto;
   }
 
-  .home-photo img {
-    height: 320px;
-  }
 }
 
 @media (max-width: 520px) {
