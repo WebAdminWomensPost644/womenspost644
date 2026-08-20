@@ -143,28 +143,24 @@ body {
 }
 
 .home-charter {
-  display: grid;
-  grid-template-columns: 1fr .9fr 1fr;
-  gap: 38px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   border-top: 3px solid #062b5d;
-  padding: 34px 10px 55px;
+  padding: 40px 10px 60px;
+  text-align: center;
 }
 
 .home-charter h2 {
-  font-size: 1.65rem;
+  max-width: 700px;
+  font-size: 1.85rem;
   line-height: 1.2;
-}
-
-.small-gold-line {
-  display: block;
-  width: 40px;
-  height: 2px;
-  margin: 14px 0 9px;
-  background: #d28b05;
+  margin-bottom: 8px;
 }
 
 .home-charter p {
+  max-width: 760px;
+  margin-top: 18px;
   line-height: 1.75;
 }
 
@@ -207,15 +203,6 @@ body {
   .home-value + .home-value {
     border-top: 1px solid #dfa83c;
     border-left: 0;
-  }
-
-  .home-charter {
-    gap: 10px;
-    text-align: center;
-  }
-
-  .small-gold-line {
-    margin-inline: auto;
   }
 
 }
