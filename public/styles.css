@@ -126,9 +126,30 @@ body {
 }
 
 .home-value-icon {
-  min-height: 65px;
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
   color: #062b5d;
-  font: 400 4rem/1 var(--font-serif);
+}
+
+.home-value-icon svg {
+  width: 64px;
+  height: 64px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-inner.home-footer {
+  grid-template-columns: 1fr 1fr;
+}
+
+.home-footer .footer-contact {
+  justify-self: end;
+  text-align: right;
 }
 
 .home-value h2 {
@@ -194,6 +215,16 @@ body {
   .home-values,
   .home-charter {
     grid-template-columns: 1fr;
+  }
+
+  .footer-inner.home-footer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .home-footer .footer-contact {
+    justify-self: start;
+    text-align: left;
   }
 
   .home-value {
