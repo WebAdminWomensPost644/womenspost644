@@ -751,8 +751,8 @@ h1, h2, h3, h4 {
 .moments2-hero > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: right center;
 }
 
 .moments2-hero::after {
@@ -773,7 +773,7 @@ h1, h2, h3, h4 {
 
 .moments2-hero-copy h1 {
   color: var(--color-navy);
-  font: 700 clamp(2.9rem, 5vw, 4.5rem)/.95 var(--font-serif);
+  font: 700 clamp(2.55rem, 4.4vw, 3.9rem)/.95 var(--font-serif);
   text-transform: uppercase;
 }
 
@@ -917,10 +917,10 @@ h1, h2, h3, h4 {
   .moments2-post-band { font-size: 1rem; }
   .moments2-post-band span { margin: 0 6px; font-size: .8rem; }
   .moments2-hero { height: 570px; }
-  .moments2-hero > img { object-position: 70% top; }
+  .moments2-hero > img { object-fit: cover; object-position: 70% top; }
   .moments2-hero::after { background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.91) 59%, rgba(255,255,255,.08) 100%); }
   .moments2-hero-copy { top: 38px; left: 24px; width: calc(100% - 48px); transform: none; }
-  .moments2-hero-copy h1 { font-size: 2.7rem; }
+  .moments2-hero-copy h1 { font-size: 2.45rem; }
   .moments2-main { padding: 20px 12px; }
   .moments2-gallery { padding: 14px; }
   .moments2-grid { grid-template-columns: 1fr; }
