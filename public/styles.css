@@ -966,11 +966,40 @@ h1, h2, h3, h4 {
 .visit2-closing .visit2-gold { margin-top: 6px; }
 .visit2-closing .visit2-blue { margin-top: 12px; }
 
-.visit2-closing-photo {
+.visit2-closing-door {
+  display: grid;
+  place-items: center;
   align-self: stretch;
-  background: url("story-hero.jpg") 78% center / cover no-repeat;
-  mask-image: linear-gradient(90deg, transparent, #000 22%);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%);
+  background: linear-gradient(135deg, #f5efe3, #fffaf1);
+}
+
+.visit2-closing-door svg {
+  width: 190px;
+  max-width: 80%;
+  fill: none;
+  stroke: var(--color-navy);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.visit2-closing-door .visit2-door-panel {
+  fill: var(--color-navy);
+}
+
+.visit2-closing-door .visit2-door-glow {
+  fill: rgba(205, 141, 20, .22);
+  stroke: var(--color-gold);
+}
+
+.visit2-closing-door .visit2-door-heart {
+  fill: var(--color-gold);
+  stroke: var(--color-gold);
+}
+
+.visit2-closing-door circle {
+  fill: var(--color-gold);
+  stroke: var(--color-gold);
 }
 
 .footer-inner.home-footer {
@@ -987,7 +1016,7 @@ h1, h2, h3, h4 {
   .visit2-details { grid-template-columns: 1fr; }
   .visit2-detail { min-height: 0; }
   .visit2-closing { grid-template-columns: 130px 1fr; }
-  .visit2-closing-photo { display: none; }
+  .visit2-closing-door { display: none; }
 }
 
 @media (max-width: 600px) {
