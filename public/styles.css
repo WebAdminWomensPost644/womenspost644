@@ -732,6 +732,16 @@ h1, h2, h3, h4 {
   text-align: right;
 }
 
+.footer-contact a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, .65);
+  text-underline-offset: 3px;
+}
+
+.footer-contact p + p {
+  margin-top: 7px;
+}
+
 /* ========================================= */
 /* --- MEMBERSHIP REDESIGN --- */
 /* ========================================= */
