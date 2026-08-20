@@ -64,6 +64,11 @@
           <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="22" r="7"/><circle cx="15" cy="26" r="5"/><circle cx="49" cy="26" r="5"/><path d="M20 50v-7c0-7 5-12 12-12s12 5 12 12v7M5 49v-6c0-5 4-9 10-9 3 0 5 1 7 3M59 49v-6c0-5-4-9-10-9-3 0-5 1-7 3"/></svg>
         </article>
         <article class="happening-event">
+          <time class="happening-date-range" datetime="2026-08-28"><span>Aug 28</span><b>–</b><span>Sep 3</span></time>
+          <div><h3>107th National Convention</h3><p>August 28–September 3</p><p>Louisville, Kentucky</p></div>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 51V19h36v32M9 51h46M22 19V12h20v7M22 29h7M35 29h7M22 38h7M35 38h7M28 51v-7h8v7"/></svg>
+        </article>
+        <article class="happening-event">
           <time datetime="2026-09-26"><span>Sep</span><strong>26</strong></time>
           <div><h3>Post 644 Monthly Meeting</h3><p>10:00 AM</p><p>Groesbeck Branch Library</p></div>
           <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="22" r="7"/><circle cx="15" cy="26" r="5"/><circle cx="49" cy="26" r="5"/><path d="M20 50v-7c0-7 5-12 12-12s12 5 12 12v7M5 49v-6c0-5 4-9 10-9 3 0 5 1 7 3M59 49v-6c0-5-4-9-10-9-3 0-5 1-7 3"/></svg>
@@ -126,6 +131,10 @@
       "2026-10-21": { title: "Post Meeting", time: "10:00 AM" },
       "2026-11-19": { title: "Post Meeting", time: "10:00 AM" }
     };
+    const conventionDates = new Set([
+      "2026-7-28", "2026-7-29", "2026-7-30", "2026-7-31",
+      "2026-8-1", "2026-8-2", "2026-8-3"
+    ]);
 
     function renderCalendar(year, month) {
       document.getElementById("calendar-month-year").textContent = `${months[month]} ${year}`;
@@ -136,7 +145,11 @@
       const previousDays = new Date(year, month, 0).getDate();
       const cells = [];
       for (let i = firstDay; i > 0; i--) cells.push({ day: previousDays - i + 1, muted: true });
-      for (let day = 1; day <= daysInMonth; day++) cells.push({ day, event: meetings[`${year}-${month}-${day}`] });
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateKey = `${year}-${month}-${day}`;
+        const event = meetings[dateKey] || (conventionDates.has(dateKey) ? { title: "Convention", time: "" } : null);
+        cells.push({ day, event });
+      }
       let nextDay = 1;
       while (cells.length % 7) cells.push({ day: nextDay++, muted: true });
       cells.forEach(({ day, muted, event }) => {
