@@ -3,213 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Moments - Women's Post 644</title>
+  <title>Our Moments - Women’s Post 644</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- FIXED HEADER -->
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-container">
         <img src="TAL-emblem-line-art-RGB.png" alt="American Legion Emblem" class="logo-img">
-        <div class="logo-text">
-          <span class="legion-title">AMERICAN LEGION</span>
-          <span class="chapter-title">GREATER CINCINNATI</span>
-          <span class="post-title">WOMEN'S POST 644</span>
-        </div>
+        <div class="logo-text"><span class="legion-title">AMERICAN LEGION</span></div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Welcome</a></li>
           <li><a href="our-story.html">Our Story</a></li>
           <li><a href="visit-us.html">Visit Us</a></li>
-          <li><a href="whats-happening.html">What's Happening</a></li>
+          <li><a href="whats-happening.html">What’s Happening</a></li>
           <li><a href="our-moments.html" class="active">Our Moments</a></li>
           <li><a href="membership.html">Membership</a></li>
-          <li><a href="lets-connect.html">Let's Connect</a></li>
+          <li><a href="lets-connect.html">Let’s Connect</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ========================================== -->
-  <!-- OUR MOMENTS PAGE CONTENT -->
-  <!-- ========================================== -->
-  <main>
-    <!-- Hero Section (50/50 Split layout matching other pages) -->
-    <section class="hero-split">
-      <div class="hero-content">
-        <h1>OUR MOMENTS</h1>
-        <div class="hero-divider">&#9733;</div>
-        <p class="hero-subtitle">Capturing the heart of sisterhood, service, and community.</p>
-        <p style="margin-top: 15px; font-size: 0.95rem;">Every meeting, every project, every act of service—and every shared laugh—strengthens the bond we share as women veterans.</p>
-        <p style="margin-top: 15px; font-style: italic; font-family: var(--font-serif); color: var(--color-red); font-weight: bold;">These are the moments that matter.</p>
-      </div>
-      <div class="hero-image">
-        <img src="content/photos/moments-hero.png" alt="Flowers and folded American flag" onerror="handleImageError(this)">
-      </div>
-    </section>
+  <div class="moments2-post-band" aria-hidden="true"><span>★ ★ ★</span> Women’s Post 644 <span>★ ★ ★</span></div>
 
-    <!-- Gallery Section Intro -->
-    <section class="moments-intro-section">
-      <div class="guides-header" style="max-width: 1100px; margin: 40px auto 20px; padding: 0 40px;">
-        <span class="line"></span>
-        <h2>MOMENTS THAT MATTER</h2>
-        <span class="line"></span>
-      </div>
-      <p style="text-align: center; font-size: 0.95rem; color: var(--color-text); margin-bottom: 40px;">
-        A glimpse into the friendships we build, the service we give, and the community we strengthen together. Click any photo to expand.
-      </p>
-    </section>
-
-    <!-- 3-Column Photo Card Grid Section -->
-    <section class="moments-grid-section">
-      <div class="moments-grid">
-        
-        <!-- Card 1 -->
-        <div class="moment-card" onclick="openGallery('content/photos/sisterhood.png', 'Sisterhood: Building friendships that last a lifetime.')">
-          <div class="moment-img-container">
-            <img src="content/photos/sisterhood.png" alt="Women sitting together around a table" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#9733; SISTERHOOD</div>
-            <p>Building friendships that last a lifetime.</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="moment-card" onclick="openGallery('content/photos/serving_community.png', 'Serving Our Community: Making a difference through service projects and donations.')">
-          <div class="moment-img-container">
-            <img src="content/photos/serving_community.png" alt="Members posing with community donation boxes" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#128151; SERVING OUR COMMUNITY</div>
-            <p>Making a difference through service projects and donations.</p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="moment-card" onclick="openGallery('content/photos/honoring_veterans.png', 'Honoring Our Veterans: Proudly honoring those who served before us.')">
-          <div class="moment-img-container">
-            <img src="content/photos/honoring_veterans.png" alt="Members marching with banner in parade" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#128101; HONORING OUR VETERANS</div>
-            <p>Proudly honoring those who served before us.</p>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="moment-card" onclick="openGallery('content/photos/giving_back.png', 'Giving Back: Supporting families and organizations in our local community.')">
-          <div class="moment-img-container">
-            <img src="content/photos/giving_back.png" alt="Members wrapping gifts" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#128151; GIVING BACK</div>
-            <p>Supporting families and organizations in our local community.</p>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="moment-card" onclick="openGallery('content/photos/together_we_grow.png', 'Together We Grow: Learning, leading, and supporting one another every day.')">
-          <div class="moment-img-container">
-            <img src="content/photos/together_we_grow.png" alt="Group photo of post members" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#128737; TOGETHER WE GROW</div>
-            <p>Learning, leading, and supporting one another every day.</p>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="moment-card" onclick="openGallery('content/photos/leading_with_purpose.png', 'Leading With Purpose: Stepping up to lead, inspire, and make an impact.')">
-          <div class="moment-img-container">
-            <img src="content/photos/leading_with_purpose.png" alt="Members participating in a meeting discussion" onerror="handleImageError(this)">
-          </div>
-          <div class="moment-card-content">
-            <div class="moment-card-title">&#9733; LEADING WITH PURPOSE</div>
-            <p>Stepping up to lead, inspire, and make an impact.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Bottom Quote Banner -->
-    <div class="cta-banner" style="margin-top: 60px;">
-      <p style="font-size: 1.1rem;">Every moment. Every connection. Every purpose.</p>
-      <p style="font-style: italic; font-size: 0.95rem; margin-top: 5px;">Together, we create memories that build a legacy.</p>
-      <p class="quote-footer-text" style="margin-top: 15px;">&#9733; THEIR VISION BECAME OUR LEGACY. THEIR PROMISE REMAINS OUR COMMITMENT. &#9733;</p>
+  <section class="moments2-hero">
+    <img src="moments-hero.jpg" alt="White flowers, star ornament, and folded star fabric on a wooden table">
+    <div class="moments2-hero-copy">
+      <h1>Our Moments</h1>
+      <p class="moments2-tagline">Capturing the heart of<br>sisterhood, service, and community.</p>
+      <div class="moments2-divider"><span></span>★<span></span></div>
+      <p>Every meeting, every project, every act of service—and every shared laugh—strengthens the bond we share as women veterans.</p>
+      <p class="moments2-emphasis">These are the moments that matter.</p>
     </div>
+  </section>
+
+  <main class="moments2-main">
+    <section class="moments2-gallery">
+      <h2>Post 644 in Action</h2>
+      <div class="moments2-title-divider"><span></span>★<span></span></div>
+      <p class="moments2-intro">From honoring our mission to supporting our community, we are proud of the difference we make together.</p>
+
+      <div class="moments2-grid">
+        <button class="moments2-card" type="button" data-image="moment-honor.jpg" data-caption="Honoring Service — Remembering the courage and sacrifice of those who came before us.">
+          <img src="moment-honor.jpg" alt="Flowers, folded star fabric, and a gold star ornament">
+          <span><strong>★ &nbsp; Honoring Service</strong><small>Remembering the courage and sacrifice of those who came before us.</small></span>
+        </button>
+        <button class="moments2-card" type="button" data-image="moment-community.jpg" data-caption="Serving Our Community — Supporting those in need through service projects and donations.">
+          <img src="moment-community.jpg" alt="Donation box filled with shelf-stable food">
+          <span><strong>♥ &nbsp; Serving Our Community</strong><small>Supporting those in need through service projects and donations.</small></span>
+        </button>
+        <button class="moments2-card" type="button" data-image="moment-planning.jpg" data-caption="Planning Together — Sharing ideas, supporting one another, and preparing to serve.">
+          <img src="moment-planning.jpg" alt="Notebooks, calendar, coffee mugs, and flowers on a planning table">
+          <span><strong>●●● &nbsp; Planning Together</strong><small>Sharing ideas, supporting one another, and preparing to serve.</small></span>
+        </button>
+        <button class="moments2-card" type="button" data-image="moment-giving.jpg" data-caption="Giving Back — Showing our appreciation for veterans and their families.">
+          <img src="moment-giving.jpg" alt="Veteran appreciation gift basket with navy and gold ribbon">
+          <span><strong>◆ &nbsp; Giving Back</strong><small>Showing our appreciation for veterans and their families.</small></span>
+        </button>
+        <button class="moments2-card" type="button" data-image="moment-proud.jpg" data-caption="Proud to Serve — Carrying our purpose with pride and representing women veterans.">
+          <img src="moment-proud.jpg" alt="Folded white service shirt beside a navy and gold star">
+          <span><strong>♢ &nbsp; Proud to Serve</strong><small>Carrying our purpose with pride and representing women veterans.</small></span>
+        </button>
+        <button class="moments2-card" type="button" data-image="moment-sisterhood.jpg" data-caption="Sisterhood That Lasts — More than a post: friendship, support, and lasting connection.">
+          <img src="moment-sisterhood.jpg" alt="Two coffee mugs, linked rings, flowers, and navy fabric">
+          <span><strong>★ &nbsp; Sisterhood That Lasts</strong><small>More than a post—friendship, support, and lasting connection.</small></span>
+        </button>
+      </div>
+
+      <div class="moments2-closing">
+        <div class="moments2-heart" aria-hidden="true">♥</div>
+        <div>
+          <h2>Every Moment. Every Connection. Every Purpose.</h2>
+          <p>Together, we create memories that build a legacy.</p>
+          <strong>This is Women’s Post 644.</strong>
+        </div>
+      </div>
+    </section>
   </main>
-  <!-- ========================================== -->
 
-  <!-- LIGHTBOX GALLERY MODAL -->
-  <div id="galleryModal" class="lightbox-modal" onclick="closeGallery()">
-    <span class="lightbox-close">&times;</span>
-    <div class="lightbox-content" onclick="event.stopPropagation()">
-      <img id="lightboxImg" src="" alt="Expanded Gallery View">
-      <p id="lightboxCaption"></p>
-    </div>
+  <div class="moments2-lightbox" id="momentsLightbox" role="dialog" aria-modal="true" aria-label="Expanded gallery image" hidden>
+    <button type="button" class="moments2-close" aria-label="Close expanded image">×</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
   </div>
 
-  <!-- FIXED FOOTER -->
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="footer-inner home-footer">
       <div class="footer-logo">
         <img src="TAL-emblem-full-detail-RGB.png" alt="American Legion Emblem" class="footer-img">
         <div class="footer-logo-text">
           <span class="footer-legion-title">AMERICAN LEGION</span>
           <span class="footer-chapter-title">GREATER CINCINNATI</span>
-          <span class="footer-post-title">WOMEN'S POST 644</span>
+          <span class="footer-post-title">WOMEN’S POST 644</span>
         </div>
       </div>
-      <div class="footer-address">
-        <p>&#128205; Allen Temple AME Church<br>8501 Hillcrest Rd.<br>Cincinnati, OH 45255</p>
-      </div>
-      <div class="footer-contact">
-        <p>&#9993; info@womenspost644.org</p>
-      </div>
+      <div class="footer-contact"><p>&#9993; info@womenspost644.org</p></div>
     </div>
   </footer>
 
-  <!-- Gallery and Placeholder Script -->
   <script>
-    function handleImageError(imgElement) {
-      // Replaces missing image with a clean styled message card container
-      const container = imgElement.parentElement;
-      container.innerHTML = `
-        <div class="photo-waiting-message">
-          <span>&#128247;</span>
-          <p>Photo coming soon...</p>
-        </div>
-      `;
+    const lightbox = document.getElementById("momentsLightbox");
+    const lightboxImage = lightbox.querySelector("img");
+    const lightboxCaption = lightbox.querySelector("figcaption");
+    document.querySelectorAll(".moments2-card").forEach(card => {
+      card.addEventListener("click", () => {
+        lightboxImage.src = card.dataset.image;
+        lightboxImage.alt = card.querySelector("img").alt;
+        lightboxCaption.textContent = card.dataset.caption;
+        lightbox.hidden = false;
+        document.body.style.overflow = "hidden";
+      });
+    });
+    function closeLightbox() {
+      lightbox.hidden = true;
+      document.body.style.overflow = "";
     }
-
-    function openGallery(imageSrc, captionText) {
-      const modal = document.getElementById("galleryModal");
-      const modalImg = document.getElementById("lightboxImg");
-      const caption = document.getElementById("lightboxCaption");
-      
-      modal.style.display = "flex";
-      modalImg.src = imageSrc;
-      caption.textContent = captionText;
-
-      // Handle if modal opens on a broken image path
-      modalImg.onerror = function() {
-        modalImg.style.display = "none";
-        caption.textContent = "Photo coming soon... Check back later!";
-      };
-      modalImg.onload = function() {
-        modalImg.style.display = "block";
-      };
-    }
-
-    function closeGallery() {
-      document.getElementById("galleryModal").style.display = "none";
-    }
+    lightbox.querySelector(".moments2-close").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", event => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener("keydown", event => { if (event.key === "Escape" && !lightbox.hidden) closeLightbox(); });
   </script>
-
 </body>
 </html>
