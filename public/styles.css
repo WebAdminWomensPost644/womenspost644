@@ -1037,6 +1037,327 @@ h1, h2, h3, h4 {
 }
 
 /* ========================================= */
+/* --- WHAT'S HAPPENING REDESIGN --- */
+/* ========================================= */
+.happening-post-band {
+  padding: 10px 20px;
+  background: var(--color-red);
+  color: #fff;
+  text-align: center;
+  font: 700 1.35rem var(--font-serif);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.happening-post-band span {
+  margin: 0 24px;
+  color: var(--color-gold);
+  letter-spacing: .2em;
+}
+
+.happening-hero {
+  position: relative;
+  height: 455px;
+  overflow: hidden;
+}
+
+.happening-hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.happening-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.9) 29%, rgba(255,255,255,.12) 55%);
+}
+
+.happening-hero-copy {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: max(5.5vw, 42px);
+  width: min(390px, 40vw);
+  transform: translateY(-50%);
+}
+
+.happening-hero-copy h1 {
+  color: var(--color-red);
+  font: 700 clamp(3rem, 5.2vw, 4.7rem)/.9 var(--font-serif);
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+.happening-tagline {
+  margin-top: 18px;
+  color: var(--color-gold);
+  font: italic 1.6rem/1.4 var(--font-serif);
+}
+
+.happening-divider,
+.happening-title-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-gold);
+}
+
+.happening-divider {
+  width: 270px;
+  margin: 15px 0 17px;
+}
+
+.happening-divider span,
+.happening-title-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.happening-hero-copy > p:last-child {
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.happening-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 38px 26px 30px;
+}
+
+.happening-board {
+  display: grid;
+  grid-template-columns: 1.2fr .9fr;
+  gap: 22px;
+}
+
+.happening-calendar-card,
+.happening-upcoming,
+.happening-announcements {
+  border: 1px solid rgba(214, 204, 185, .55);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(13, 42, 79, .045);
+  background: linear-gradient(145deg, #fbfaf7, #fff);
+}
+
+.happening-calendar-card,
+.happening-upcoming {
+  padding: 22px 18px 24px;
+}
+
+.happening-calendar-card h2,
+.happening-upcoming > h2,
+.happening-announcements h2 {
+  color: var(--color-red);
+  font-family: var(--font-serif);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.happening-calendar-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.45rem;
+}
+
+.happening-calendar-card h2 span {
+  flex: 1;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.happening-calendar-nav {
+  display: grid;
+  grid-template-columns: 45px 1fr 45px;
+  align-items: center;
+  margin: 15px 0 10px;
+}
+
+.happening-calendar-nav h3 {
+  color: var(--color-red);
+  font: 700 1.65rem var(--font-serif);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.happening-calendar-nav button {
+  border: 0;
+  background: transparent;
+  color: var(--color-red);
+  font-size: 2.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.happening-calendar-nav button:hover { color: var(--color-gold); }
+
+.happening-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.happening-weekdays {
+  background: var(--color-red);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.happening-weekdays div { padding: 7px 2px; }
+
+.happening-day {
+  display: flex;
+  min-height: 73px;
+  padding: 8px 5px;
+  border-right: 1px solid #e8e1d6;
+  border-bottom: 1px solid #e8e1d6;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  font-size: .9rem;
+}
+
+.happening-day:nth-child(7n + 1) { border-left: 1px solid #e8e1d6; }
+.happening-day.is-muted { color: #aaa; background: #fafafa; }
+.happening-day.has-event { background: #fff1d9; color: var(--color-red); }
+.happening-day.has-event strong { color: var(--color-gold); }
+.happening-day small { margin-top: 2px; font-size: .62rem; font-weight: 700; text-align: center; }
+.happening-day em { font-size: .6rem; color: #111; font-style: normal; }
+
+.happening-upcoming > h2 { font-size: 1.55rem; }
+.happening-title-divider { margin: 10px 14px 6px; }
+
+.happening-event {
+  display: grid;
+  grid-template-columns: 60px 1fr 50px;
+  gap: 15px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(205, 141, 20, .55);
+}
+
+.happening-event time {
+  display: flex;
+  height: 66px;
+  border: 1px solid var(--color-red);
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-red);
+  font-family: var(--font-serif);
+}
+
+.happening-event time span { font-size: .8rem; font-weight: 700; text-transform: uppercase; }
+.happening-event time strong { font-size: 1.7rem; line-height: 1; }
+.happening-event h3 { font-size: .92rem; }
+.happening-event p { margin-top: 3px; font-size: .82rem; }
+
+.happening-event svg {
+  width: 47px;
+  fill: none;
+  stroke: var(--color-red);
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.happening-holiday-note {
+  margin-top: 14px;
+  color: var(--color-red);
+  font: italic .95rem/1.45 var(--font-serif);
+  text-align: center;
+}
+
+.happening-announcements {
+  display: grid;
+  grid-template-columns: 120px 1.8fr 100px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 24px 34px;
+}
+
+.happening-announcements h2 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-gold);
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.happening-megaphone,
+.happening-calendar-icon {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.happening-megaphone { background: var(--color-red); }
+.happening-calendar-icon { background: var(--color-gold); }
+
+.happening-megaphone svg,
+.happening-calendar-icon svg {
+  width: 58px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.happening-announcements ul { margin-top: 10px; list-style: none; }
+.happening-announcements li { position: relative; margin: 9px 0; padding-left: 22px; }
+.happening-announcements li::before { content: "★"; position: absolute; left: 0; color: var(--color-gold); }
+.happening-announcements li span { display: block; font-size: .85rem; }
+
+.happening-callout {
+  padding-left: 24px;
+  border-left: 1px solid var(--color-gold);
+  color: var(--color-red);
+  font: italic 1rem/1.55 var(--font-serif);
+}
+
+@media (max-width: 900px) {
+  .happening-hero-copy { width: 48%; }
+  .happening-board { grid-template-columns: 1fr; }
+  .happening-announcements { grid-template-columns: 100px 1fr; }
+  .happening-calendar-icon { display: none; }
+  .happening-callout { grid-column: 2; }
+}
+
+@media (max-width: 600px) {
+  .happening-post-band { font-size: 1rem; }
+  .happening-post-band span { margin: 0 6px; font-size: .8rem; }
+  .happening-hero { height: 575px; }
+  .happening-hero > img { object-position: 68% center; }
+  .happening-hero::after { background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.9) 58%, rgba(255,255,255,.1) 100%); }
+  .happening-hero-copy { top: 38px; left: 24px; width: calc(100% - 48px); transform: none; }
+  .happening-hero-copy h1 { font-size: 2.8rem; }
+  .happening-main { padding: 22px 12px; }
+  .happening-calendar-card, .happening-upcoming { padding-inline: 10px; }
+  .happening-calendar-card h2 { font-size: 1.15rem; }
+  .happening-calendar-nav h3 { font-size: 1.25rem; }
+  .happening-day { min-height: 58px; padding: 4px 2px; font-size: .78rem; }
+  .happening-day small { font-size: .5rem; }
+  .happening-day em { display: none; }
+  .happening-event { grid-template-columns: 55px 1fr 38px; gap: 10px; }
+  .happening-event svg { width: 36px; }
+  .happening-announcements { grid-template-columns: 1fr; padding: 24px; text-align: center; }
+  .happening-megaphone { margin: auto; }
+  .happening-announcements h2 { text-align: center; }
+  .happening-announcements li { text-align: left; }
+  .happening-callout { grid-column: 1; padding: 16px 0 0; border-left: 0; border-top: 1px solid var(--color-gold); }
+}
+
+/* ========================================= */
 /* --- OUR STORY REDESIGN --- */
 /* ========================================= */
 .story-post-band {
