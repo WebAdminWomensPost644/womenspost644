@@ -702,6 +702,11 @@ h1, h2, h3, h4 {
   width: 50px;
 }
 
+.footer-post-logo {
+  width: 82px;
+  flex: 0 0 auto;
+}
+
 .footer-logo-text {
   display: flex;
   flex-direction: column;
@@ -773,7 +778,7 @@ h1, h2, h3, h4 {
 
 .member2-hero-copy h1 {
   color: var(--color-navy);
-  font: 700 clamp(2.8rem, 4.7vw, 4.2rem)/.95 var(--font-serif);
+  font: 700 clamp(2.5rem, 4.1vw, 3.65rem)/.95 var(--font-serif);
   text-transform: uppercase;
 }
 
@@ -798,7 +803,7 @@ h1, h2, h3, h4 {
 
 .member2-emphasis {
   margin-top: 15px;
-  color: var(--color-red);
+  color: var(--color-navy);
   font: italic 700 1.2rem var(--font-serif);
 }
 
@@ -960,7 +965,7 @@ h1, h2, h3, h4 {
   .member2-hero > img { object-position: 73% center; }
   .member2-hero::after { background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.91) 60%, rgba(255,255,255,.06) 100%); }
   .member2-hero-copy { top: 38px; left: 24px; width: calc(100% - 48px); transform: none; }
-  .member2-hero-copy h1 { font-size: 2.55rem; }
+  .member2-hero-copy h1 { font-size: 2.35rem; }
   .member2-main { padding: 20px 12px; }
   .member2-card { padding: 23px 18px; }
   .member2-card h2 { font-size: 1.3rem; }
