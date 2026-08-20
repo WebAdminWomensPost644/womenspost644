@@ -59,7 +59,7 @@ body {
 
 .home-intro h1 {
   color: #062b5d;
-  font-size: clamp(3rem, 5.4vw, 4.7rem);
+  font-size: clamp(2.2rem, 3.8vw, 3.35rem);
   line-height: 1.08;
   margin-bottom: 8px;
 }
@@ -163,6 +163,53 @@ body {
   line-height: 1.75;
 }
 
+.home-commander {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 32px;
+  align-items: center;
+  width: min(1020px, calc(100% - 80px));
+  margin: 48px auto 58px;
+  padding: 34px 42px;
+  border: 1px solid rgba(117, 15, 29, .5);
+  border-left: 6px solid var(--color-red);
+  background: linear-gradient(110deg, #fbf6ec, #fff);
+  box-shadow: 0 10px 26px rgba(13, 42, 79, .06);
+}
+
+.home-commander-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  border: 2px solid var(--color-gold);
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.home-commander-kicker {
+  color: var(--color-gold);
+  font: 700 .82rem var(--font-sans);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.home-commander h2 {
+  margin: 5px 0 14px;
+  color: var(--color-navy);
+  font-size: 1.65rem;
+}
+
+.home-commander-copy > p:not(.home-commander-kicker):not(.home-commander-signature) {
+  margin-top: 11px;
+  line-height: 1.7;
+}
+
+.home-commander-signature {
+  margin-top: 17px;
+  color: var(--color-red);
+  font: italic 700 1.15rem var(--font-serif);
+}
+
 .home-charter {
   display: flex;
   flex-direction: column;
@@ -236,6 +283,23 @@ body {
     border-left: 0;
   }
 
+}
+
+@media (max-width: 600px) {
+  .home-commander {
+    grid-template-columns: 1fr;
+    width: calc(100% - 30px);
+    margin: 30px auto 42px;
+    padding: 27px 22px;
+  }
+
+  .home-commander-mark {
+    font-size: 3rem;
+  }
+
+  .home-commander-copy {
+    text-align: center;
+  }
 }
 
 @media (max-width: 520px) {
@@ -730,6 +794,54 @@ h1, h2, h3, h4 {
 
 .footer-contact {
   text-align: right;
+}
+
+/* Center the Post 644 identity in every footer. */
+.footer-inner.home-footer {
+  grid-template-columns: 1fr 140px 1fr;
+  min-height: 165px;
+}
+
+.footer-inner.home-footer .footer-logo {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.footer-inner.home-footer .footer-post-logo {
+  width: 124px;
+}
+
+.footer-inner.home-footer .footer-contact {
+  grid-column: 3;
+  justify-self: end;
+}
+
+@media (max-width: 600px) {
+  .home-commander-photo {
+    width: 160px;
+    margin-inline: auto;
+  }
+
+  .footer-inner.home-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner.home-footer .footer-logo,
+  .footer-inner.home-footer .footer-contact {
+    grid-column: 1;
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, .65);
+  text-underline-offset: 3px;
+}
+
+.footer-contact p + p {
+  margin-top: 7px;
 }
 
 /* ========================================= */
