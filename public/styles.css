@@ -727,6 +727,244 @@ h1, h2, h3, h4 {
   text-align: right;
 }
 
+/* ========================================= */
+/* --- OUR STORY REDESIGN --- */
+/* ========================================= */
+.story-post-band {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: #062b5d;
+  color: white;
+  font: 700 1.25rem/1 var(--font-serif);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.story-post-band span {
+  color: #d28b05;
+  letter-spacing: .3em;
+}
+
+.story2-hero {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+}
+
+.story2-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.story2-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, calc(100% - 80px));
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.story2-hero-copy h1 {
+  color: #062b5d;
+  font-size: clamp(3.4rem, 6vw, 5.4rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.story2-hero-copy p {
+  margin: 22px 0 0 78px;
+  color: #c47700;
+  font: italic clamp(1.55rem, 2.7vw, 2.25rem)/1.45 var(--font-serif);
+}
+
+.story2-card {
+  display: grid;
+  width: min(1100px, calc(100% - 80px));
+  margin: 42px auto;
+  padding: 28px;
+  gap: 34px;
+  align-items: center;
+  background: rgba(255,255,255,.8);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(6,43,93,.08);
+}
+
+.story2-history {
+  grid-template-columns: .82fr 1.35fr;
+}
+
+.story2-today {
+  grid-template-columns: 1fr 1.15fr;
+}
+
+.story2-copy h2 {
+  margin-bottom: 14px;
+  color: #062b5d;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+
+.story2-copy p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.story2-archive-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 14px;
+}
+
+.story2-archive-grid figure {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.story2-archive-grid img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: sepia(.12);
+}
+
+.story2-archive-grid figcaption {
+  padding-top: 8px;
+  color: #5b5b5b;
+  font-size: .74rem;
+  line-height: 1.4;
+}
+
+.story2-photo-note {
+  grid-column: 1 / -1;
+  color: #555;
+  font-size: .78rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.story2-today > img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.story2-closing {
+  padding: 55px max(24px, calc((100% - 880px) / 2)) 65px;
+  text-align: center;
+  background: linear-gradient(135deg, #f7f9fc, #e8eef7);
+  color: #062b5d;
+}
+
+.story2-closing blockquote {
+  position: relative;
+  font: italic clamp(1.4rem, 2.5vw, 2rem)/1.5 var(--font-serif);
+}
+
+.story2-closing blockquote::before,
+.story2-closing blockquote::after {
+  color: #c47700;
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.story2-closing blockquote::before { content: "“"; margin-right: 12px; }
+.story2-closing blockquote::after { content: "”"; margin-left: 12px; }
+
+.story2-star {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px auto 14px;
+  color: #d28b05;
+}
+
+.story2-star span {
+  flex: 1;
+  height: 1px;
+  background: #d28b05;
+}
+
+.story2-closing > p {
+  font: 700 clamp(1.25rem, 2.2vw, 1.65rem)/1.35 var(--font-serif);
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .story2-hero {
+    min-height: 390px;
+  }
+
+  .story2-hero-copy,
+  .story2-card {
+    width: min(100% - 36px, 680px);
+  }
+
+  .story2-hero-copy {
+    padding-top: 54px;
+  }
+
+  .story2-hero-copy p {
+    margin-left: 0;
+  }
+
+  .story2-history,
+  .story2-today {
+    grid-template-columns: 1fr;
+  }
+
+  .story2-today > img {
+    height: auto;
+  }
+
+  .footer-inner.home-footer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .home-footer .footer-contact {
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-post-band {
+    gap: 10px;
+    font-size: .9rem;
+  }
+
+  .story-post-band span {
+    letter-spacing: 0;
+  }
+
+  .story2-hero {
+    min-height: 440px;
+  }
+
+  .story2-hero > img {
+    object-position: 60% center;
+  }
+
+  .story2-archive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story2-archive-grid img {
+    height: auto;
+  }
+}
+
 
 /* ========================================= */
 /* --- VISIT US FULL-WIDTH HERO STYLES --- */
