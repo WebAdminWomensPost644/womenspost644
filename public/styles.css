@@ -858,11 +858,32 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.member2-eligibility img {
+.member2-branches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 8px;
+  margin: 18px 0 12px;
+}
+
+.member2-branches figure {
+  margin: 0;
+  text-align: center;
+}
+
+.member2-branches img {
   display: block;
-  width: 100%;
-  margin: 18px auto 10px;
-  mix-blend-mode: multiply;
+  width: 74px;
+  height: 74px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.member2-branches figcaption {
+  margin-top: 4px;
+  color: var(--color-navy);
+  font-size: .67rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .member2-eligibility a {
